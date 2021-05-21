@@ -9,3 +9,9 @@ export const Container = styled.div`
     width: 100%;
     justify-content: center;
 `
+
+export const Flex = styled.div`
+  display: flex;
+  position: relative;
+  justify-content: center;
+ `;

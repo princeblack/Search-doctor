@@ -5,14 +5,14 @@ import React from 'react';
 
 // Local imports
 import { Container } from './styles'
-import FormikTextInput from './formikTextInput'
+import Form from './form'
 
 ////////////////////////////////////////////////////////////////////////////////
 
 const App = () => {
   return (
     <Container>
-      <FormikTextInput/>
+      <Form/>
     </Container>
   )
 };
