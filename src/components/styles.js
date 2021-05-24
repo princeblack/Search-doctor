@@ -1,6 +1,7 @@
 // Third-party imports
 import styled from 'styled-components';
 
+// Local imports
 import theme  from './theme';
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -13,9 +14,9 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   background-image: url(${({src}) => src});
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   @media (max-width: ${theme.breakpoints.xs}) {
     background-image: none;
   }

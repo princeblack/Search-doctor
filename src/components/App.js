@@ -67,7 +67,7 @@ const App = () => {
     <Container {...background}>
       <Form {...searchFormProps} />
       <ListOfDoctors>
-        {!doctorsIsFound && <Note>Sorry no Doctor was found.</Note>}
+        {!doctorsIsFound && <Note>SORRY NO DOCTOR WAS FOUND.</Note>}
         {doctorsCards}
       </ListOfDoctors>
     </Container>

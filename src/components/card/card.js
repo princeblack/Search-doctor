@@ -15,6 +15,17 @@ import imageSrc from './doc.svg';
 
 ////////////////////////////////////////////////////////////////////////////////
 
+/**
+ * @function card
+ * @category Components
+ * @description Displays a doctor Card.
+ * @param {string} city - getting the doctor city.
+ * @param {string} area_of_expertise - getting the doctor area of expertise .
+ * @param {string} facility - getting the doctor facility.
+ * @param {string} first_name - getting the doctor first name.
+ * @param {string} last_name - getting the doctor last name.
+ * @param {string} email - getting the doctor email.
+ */
 const Card = ({
   city,
   area_of_expertise,
