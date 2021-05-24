@@ -4,20 +4,22 @@ import {space, layout} from 'styled-system'
 
 
 // Local imports
+import theme  from '../theme';
 
 ////////////////////////////////////////////////////////////////////////////////
 export const StyledButton = styled.button`
-  background: ${({theme}) => theme.colors.black};
+  background: ${theme.colors.black};
   text-transform: uppercase;
-  color: ${({theme}) => theme.colors.white};
+  color: ${theme.colors.white};
   padding: 12px;
   width: 100%;
   height: 46px;
   font-weight: 600;
   font-size: 16px;
   font-family: Graphik;
-  @media (max-width: ${({theme}) => theme.breakpoints.sm}) {
-    height: 25px;
+  outline: none;
+  margin-left: 15px ;
+  @media (max-width: ${theme.breakpoints.sm}) {
     padding: 7px;
     font-size: 12px;
   }
