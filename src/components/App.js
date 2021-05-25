@@ -27,9 +27,10 @@ const App = () => {
   const apiRequest = async (city, facility, area_of_expertise) => {
     // getting the city name  with first letter capitalized
     const newCity = capitalizeFirstLetter(city);
+    const location = await newCity.trim();
 
     // getting the api endpoint with facitity as optional
-    const endPoint = `medical/get_doctors?city=${newCity}&area_of_expertise=${area_of_expertise}${
+    const endPoint = `medical/get_doctors?city=${location}&area_of_expertise=${area_of_expertise}${
       facility ? `&facility=${facility}` : ''
     }`;
 
